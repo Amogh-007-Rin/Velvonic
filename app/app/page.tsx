@@ -87,7 +87,7 @@ export default function Home() {
             }}
           />
           <ShinyText
-            text={"Founder - Amogh Dath\nCo-Founder - Param Patel"}
+            text={"Founder - Amogh Dath\nCo-Founder - Param Patel\nCPO - Rajveer Singh"}
             color="#8f8f8f"
             shineColor="#d7f3ff"
             speed={2.4}
