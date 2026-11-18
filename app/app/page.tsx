@@ -1,4 +1,4 @@
-import LightTunnel from "@/components/LightTunnel";
+import FluxLines from "@/components/FluxLines";
 import ShinyText from "@/components/ShinyText";
 import TechText from "@/components/TechText";
 
@@ -13,38 +13,20 @@ export default function Home() {
         background: "#030303",
       }}
     >
-      <LightTunnel
-        dpr={1}
-        style={{ width: "100%", height: "100svh" }}
-        cableColor="#ffffff"
-        pulseColor="#ffffff"
-        cableCount={56}
-        pulseDensity={0.5}
-        flowDirection="inward"
+      <FluxLines
+        style={{
+          position: "absolute",
+          inset: 0,
+          zIndex: 0,
+          width: "100%",
+          height: "100%",
+        }}
+        colors={["#ffffff", "#7dd3fc", "#a78bfa"]}
+        speed={0.35}
         mouseInteraction
-        clickSurge
-        tunnelColor="#ffffff"
-        tunnelOpacity={0}
-        speed={0.1}
-        pulseSpeed={2}
-        pulseLength={0.28}
-        pulseBlend={0.6}
-        pulseWidth={1}
-        thickness={0.35}
-        rimWidth={0.15}
-        waviness={0.3}
-        sway={0.5}
-        bend={0.4}
-        glow={1}
-        size={1}
-        fadeNear={0.5}
-        fadeFar={2}
-        brightness={1}
-        colorVariance
-        grain={false}
-        mouseStrength={0.1}
-        intro
-        lightMode={false}
+        clickSwirl
+        opacity={0.8}
+        dpr={1}
       />
       <div
         style={{
