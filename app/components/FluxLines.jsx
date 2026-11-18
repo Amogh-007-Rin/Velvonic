@@ -204,10 +204,10 @@ const BlackholeBackground = ({
   intro = true,
   lightMode = false,
   transparent = true,
-  backgroundColor,
+  backgroundColor = undefined,
   paused = false,
   dpr,
-  mixBlendMode,
+  mixBlendMode = undefined,
   className = '',
   style,
   ...rest
